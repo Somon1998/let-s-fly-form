@@ -1,0 +1,266 @@
+$gap: 1.5rem;
+$gap-small: 1rem;
+$gap-xs: 0.8rem;
+
+.apply {
+  @media (max-width: 1650px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (max-width: 480px) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 2.35fr 1fr;
+    grid-template-rows: auto auto;
+    gap: $gap;
+
+    @media (max-width: 1400px) {
+      grid-template-columns: 1fr 5.6fr 1fr;
+    }
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr 17.7fr 1fr;
+    }
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr 30fr 1fr;
+    }
+
+    @media (max-width: 768px) {
+      gap: $gap-small;
+    }
+
+    @media (max-width: 480px) {
+      display: flex;
+    }
+  }
+
+  &__empty-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: $gap;
+    height: 100%;
+    align-self: stretch;
+    grid-row: 1 / span 2;
+    @media (max-width: 768px) {
+      gap: $gap-small;
+    }
+    @media (max-width: 480px) {
+      display: none;
+      gap: $gap-xs;
+    }
+
+    &:last-child {
+      > div {
+        border-radius: 1rem 0 0 1rem;
+      }
+    }
+  }
+
+  &__empty {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    background-color: #ececf0;
+    border-radius: 0 1rem 1rem 0;
+    height: 100%;
+    will-change: transform;
+  }
+
+  &__main {
+    // grid-column: 3/4;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    align-self: stretch;
+    @media (max-width: 768px) {
+      gap: $gap-small;
+    }
+    @media (max-width: 480px) {
+      gap: $gap-xs;
+    }
+  }
+
+  &__first-plane {
+    position: absolute;
+    right: -2rem;
+    top: -2.5rem;
+    max-width: 80%;
+    height: auto;
+
+    @media (max-width: 1400px) {
+      max-width: 100%;
+      top: -5.35rem;
+      right: -10rem;
+    }
+
+    @media (max-width: 992px) {
+      top: -0.6rem;
+      right: -9rem;
+    }
+
+    @media (max-width: 768px) {
+      right: -14rem;
+      top: -0.7rem;
+      max-width: 125%;
+    }
+
+    @media (max-width: 480px) {
+      top: -3.7rem;
+      right: -12.5rem;
+    }
+  }
+
+  &__second-plane {
+    position: absolute;
+    left: -7.5rem;
+    top: -8rem;
+    max-width: 130%;
+    height: auto;
+
+    @media (max-width: 768px) {
+      top: -2rem;
+      left: -4rem;
+    }
+  }
+
+  &__card {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    background-color: $color-block;
+    border-radius: 1rem;
+    padding: 1.7rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    overflow: hidden;
+    will-change: transform;
+    @media (max-width: 768px) {
+      padding: 1rem;
+      gap: $gap-small;
+    }
+    @media (max-width: 480px) {
+      gap: $gap-xs;
+    }
+
+    &--top {
+      min-height: 26.5rem;
+      justify-content: space-between;
+
+      @media (max-width: 992px) {
+        min-height: 27.2rem;
+      }
+
+      @media (max-width: 768px) {
+        min-height: 21rem;
+      }
+
+      @media (max-width: 480px) {
+        min-height: 14rem;
+      }
+
+      > button {
+        width: max-content;
+      }
+    }
+
+    &--left {
+      background: linear-gradient(to bottom, #373135, #2d2023);
+      color: #fff;
+      position: relative;
+      text-align: center;
+      padding-top: 15rem;
+      align-items: center;
+
+      @media (max-width: 768px) {
+        padding-top: 11rem;
+      }
+
+      > button {
+        width: max-content;
+      }
+    }
+
+    &--right {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: $gap;
+      @media (max-width: 768px) {
+        gap: $gap-small;
+      }
+      @media (max-width: 480px) {
+        gap: $gap-xs;
+      }
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $gap;
+    width: 100%;
+    @media (max-width: 768px) {
+      gap: $gap-small;
+    }
+  }
+
+  &__title {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #23233d;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
+
+    &--light {
+      color: #fff;
+    }
+  }
+
+  &__chat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__message {
+    border-radius: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    max-width: 80%;
+    @media (max-width: 768px) {
+      font-size: 0.7rem;
+      padding: 0.5rem 0.7rem;
+    }
+
+    &--user {
+      background: #26a4ff;
+      color: #fff;
+      align-self: flex-end;
+      margin-bottom: 0.3rem;
+    }
+    &--system {
+      background: $color-gray;
+      color: #23233d;
+      align-self: flex-start;
+    }
+  }
+
+  &__support {
+    > button {
+      margin-top: 1rem;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "Media Query 1650px": {
+    "scope": "scss",
+    "prefix": "m165",
+    "body": ["@media (max-width: 1650px) {", "  $0", "}"],
+    "description": "Media query for max-width 1650px"
+  },
+  "Media Query 1400px": {
+    "scope": "scss",
+    "prefix": "m14",
+    "body": ["@media (max-width: 1400px) {", "  $0", "}"],
+    "description": "Media query for max-width 1400px"
+  },
+  "Media Query 1200px": {
+    "scope": "scss",
+    "prefix": "m12",
+    "body": ["@media (max-width: 1200px) {", "  $0", "}"],
+    "description": "Media query for max-width 1200px"
+  },
+  "Media Query 992px": {
+    "scope": "scss",
+    "prefix": "m92",
+    "body": ["@media (max-width: 992px) {", "  $0", "}"],
+    "description": "Media query for max-width 992px"
+  },
+  "Media Query 768px": {
+    "scope": "scss",
+    "prefix": "m76",
+    "body": ["@media (max-width: 768px) {", "  $0", "}"],
+    "description": "Media query for max-width 768px"
+  },
+  "Media Query 480px": {
+    "scope": "scss",
+    "prefix": "m48",
+    "body": ["@media (max-width: 480px) {", "  $0", "}"],
+    "description": "Media query for max-width 480px"
+  },
+  "Media Query 360px": {
+    "scope": "scss",
+    "prefix": "m36",
+    "body": ["@media (max-width: 360px) {", "  $0", "}"],
+    "description": "Media query for max-width 360px"
+  }
+}

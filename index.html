@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Jet</title>
+    <meta
+      name="description"
+      content="Experience luxury private jet travel with our affordable and seamless booking service. Fly in style and comfort today."
+    />
+    <meta
+      name="keywords"
+      content="private jet, luxury travel, affordable flights, seamless booking, jet charter, exclusive flights"
+    />
+    <meta name="author" content="Max - RED Group" />
+    <meta property="og:title" content="Private Jet" />
+    <meta
+      property="og:description"
+      content="Experience luxury private jet travel with our affordable and seamless booking service. Fly in style and comfort today."
+    />
+    <meta property="og:image" content="./assets/images/plane/06-1920.png" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/preflight.min.css" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body id="body">
+    <header class="header fade-in">
+      <div class="container">
+        <a href="/" class="header__logo"> LetsFly </a>
+        <nav class="header__menu">
+          <ul>
+            <li><a href="#body">Intro</a></li>
+            <li><a href="#luxury">About</a></li>
+            <li><a href="#costs">Costs</a></li>
+            <li><a href="#apply">Features</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main class="welcome" id="welcome">
+          <div class="welcome__information zoom-in-fade-in">
+            <div class="sub-title">Personal jets</div>
+            <h1 class="welcome__title">Luxury.<br />Affordable.</h1>
+            <div class="description">
+              We believe loyalty should be rewarded.
+            </div>
+
+            <div class="welcome__cta">
+              <button class="btn btn--gray">Learn more</button>
+              <button
+                class="btn btn--primary"
+                id="open-modal-button"
+                aria-label="Open application form"
+              >
+                Let's Fly
+              </button>
+            </div>
+          </div>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                /assets/images/plane/06-480.webp   480w,
+                /assets/images/plane/06-1024.webp 1024w,
+                /assets/images/plane/06-1920.webp 1920w,
+                /assets/images/plane/06.webp      2560w
+              "
+              sizes="(min-width: 1400px) 70vw, 100vw"
+            />
+
+            <img
+              class="welcome__plane non-select-image"
+              src="/assets/images/plane/06-1920.png"
+              srcset="
+                /assets/images/plane/06-480.png   480w,
+                /assets/images/plane/06-1024.png 1024w,
+                /assets/images/plane/06-1920.png 1920w,
+                /assets/images/plane/06.png      2560w
+              "
+              sizes="(min-width: 1400px) 70vw, 100vw"
+              draggable="false"
+              alt="A luxury private jet flying in the sky with clouds in the background."
+              loading="eager"
+              fetchpriority="high"
+            />
+          </picture>
+
+          <div class="welcome__bg-clouds">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="/assets/images/clouds/left-cloud.webp"
+              />
+
+              <img
+                src="/assets/images/clouds/left-cloud.png"
+                draggable="false"
+                class="non-select-image fade-in left-cloud"
+                alt=""
+                loading="eager"
+                fetchpriority="high"
+              />
+            </picture>
+
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  /assets/images/clouds/main-cloud-480.webp  480w,
+                  /assets/images/clouds/main-cloud.webp     1024w
+                "
+                sizes="(min-width: 1200px) 60vw, 100vw"
+              />
+
+              <img
+                src="/assets/images/clouds/main-cloud.png"
+                srcset="
+                  /assets/images/clouds/main-cloud-480.png  480w,
+                  /assets/images/clouds/main-cloud.png     1024w
+                "
+                sizes="(min-width: 1200px) 60vw, 100vw"
+                draggable="false"
+                class="non-select-image fade-in main-cloud"
+                alt=""
+                loading="eager"
+                fetchpriority="high"
+              />
+            </picture>
+
+            <picture>
+              <source
+                type="image/webp"
+                srcset="/assets/images/clouds/right-cloud.webp"
+              />
+
+              <img
+                src="/assets/images/clouds/right-cloud.png"
+                draggable="false"
+                class="non-select-image right-fade-in right-cloud"
+                alt=""
+                loading="eager"
+                fetchpriority="high"
+              />
+            </picture>
+          </div>
+        </main>
+
+        <div class="mission">
+          <div>One simple fly rate.</div>
+          <div>A discount that gets better and better.</div>
+          <div>Apply in minutes.</div>
+          <div>Built for rich people.</div>
+        </div>
+
+        <section id="luxury">
+          <div class="container will-change-transform">
+            <div class="sub-title">EXPERIENGE OUR</div>
+            <h2 class="section-title">
+              <span>Luxury</span>
+              Flights.
+            </h2>
+            <div class="description section__description">
+              Experience unmatched luxury in the skies. Our private jets offer
+              top-fier comfort, personalized service, and exquisite amenities
+              for every journey.
+            </div>
+            <button class="btn btn--gray">Book now</button>
+          </div>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                /assets/images/plane/05-480.webp   480w,
+                /assets/images/plane/05-1024.webp 1024w,
+                /assets/images/plane/05-1920.webp 1920w,
+                /assets/images/plane/05.webp      2560w
+              "
+              sizes="(min-width: 1400px) 120vw, 100vw"
+            />
+            <img
+              class="luxury-flights__image non-select-image"
+              src="/assets/images/plane/05.png"
+              srcset="
+                /assets/images/plane/05-480.png   480w,
+                /assets/images/plane/05-1024.png 1024w,
+                /assets/images/plane/05-1920.png 1920w,
+                /assets/images/plane/05.png      2560w
+              "
+              sizes="(min-width: 1400px) 120vw, 100vw"
+              alt=""
+              loading="eager"
+              fetchpriority="high"
+              draggable="false"
+            />
+          </picture>
+        </section>
+
+        <section class="loyalty">
+          <div class="container">
+            <div class="loyalty__top">
+              <div class="sub-title">SEAMIESSI</div>
+              <h2 class="section-title">
+                <span>Instantly</span>
+                Booked.
+              </h2>
+            </div>
+
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  /assets/images/plane/loyalty-plane-480.webp   480w,
+                  /assets/images/plane/loyalty-plane-1024.webp 1024w,
+                  /assets/images/plane/loyalty-plane-1920.webp 1920w,
+                  /assets/images/plane/loyalty-plane.webp      2560w
+                "
+                sizes="(min-width: 1400px) 100vw, 100vw"
+              />
+              <img
+                class="loyalty__image non-select-image"
+                src="/assets/images/plane/loyalty-plane.png"
+                srcset="
+                  /assets/images/plane/loyalty-plane-480.png   480w,
+                  /assets/images/plane/loyalty-plane-1024.png 1024w,
+                  /assets/images/plane/loyalty-plane-1920.png 1920w,
+                  /assets/images/plane/loyalty-plane.png      2560w
+                "
+                sizes="(min-width: 1400px) 100vw, 100vw"
+                alt=""
+                loading="eager"
+                fetchpriority="high"
+                draggable="false"
+              />
+            </picture>
+
+            <div class="loyalty__bottom">
+              <h3 class="section-bottom-title">Every. Single. Year.</h3>
+              <div
+                class="section-bottom-description description section__description"
+              >
+                Enjoy new, exclusive perks and benefits every single year with
+                our luxury flight services.<br /><br />
+                We believe lovely should be rewarded.
+
+                <button class="btn">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="costs" id="costs">
+          <div class="container">
+            <div class="costs__sub-heading fade-in">Insanly Low</div>
+            <h2 class="costs__heading fade-in">Costs.</h2>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  /assets/images/plane/03-480.webp   480w,
+                  /assets/images/plane/03-1024.webp 1024w,
+                  /assets/images/plane/03-1920.webp 1920w,
+                  /assets/images/plane/03.webp      2560w
+                "
+                sizes="(min-width: 1400px) 100vw, 100vw"
+              />
+              <img
+                class="costs__image non-select-image"
+                src="/assets/images/plane/03.png"
+                srcset="
+                  /assets/images/plane/03-480.png   480w,
+                  /assets/images/plane/03-1024.png 1024w,
+                  /assets/images/plane/03-1920.png 1920w,
+                  /assets/images/plane/03.png      2560w
+                "
+                sizes="(min-width: 1400px) 100vw, 100vw"
+                alt=""
+                loading="eager"
+                fetchpriority="high"
+                draggable="false"
+              />
+            </picture>
+
+            <div class="costs__bottom">
+              <div class="costs__bottom-left">
+                <h3 class="section-bottom-title">Personal Discounts.</h3>
+                <div
+                  class="costs__bottom-description section-bottom-description description section__description"
+                >
+                  Unlock tallored savings lust for vou. Exclusive personal
+                  discounts on our luxury erivere jet services.
+                </div>
+                <div class="costs__bottom-buttons">
+                  <button class="btn btn--gray">Learn more</button>
+                  <button class="btn">Get Started</button>
+                </div>
+              </div>
+              <div class="costs__bottom-right">
+                <div>
+                  <div>5.25</div>
+                  <div><span>%</span><span>PA</span></div>
+                </div>
+                <div>Estimated Rate*</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="apply" id="apply">
+          <div class="apply__grid">
+            <div class="apply__empty-wrapper">
+              <div class="apply__empty"></div>
+              <div class="apply__empty"></div>
+            </div>
+
+            <div class="apply__main">
+              <div class="apply__card apply__card--top">
+                <span class="apply__title"> Apply in minutes. </span>
+                <button class="btn btn--gray">Learn more</button>
+                <picture class="apply__first-plane">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      /assets/images/plane/apply-480.webp 480w,
+                      /assets/images/plane/apply.webp     800w
+                    "
+                    sizes="(max-width: 1400px) 100vw, 80vw"
+                  />
+                  <img
+                    class="non-select-image"
+                    src="/assets/images/plane/apply.png"
+                    srcset="
+                      /assets/images/plane/apply-480.png 480w,
+                      /assets/images/plane/apply.png     800w
+                    "
+                    sizes="(max-width: 1400px) 100vw, 80vw"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+                </picture>
+              </div>
+
+              <div class="apply__row">
+                <div class="apply__card apply__card--left">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        /assets/images/plane/apply-2-480.webp 480w,
+                        /assets/images/plane/apply-2.webp     800w
+                      "
+                      sizes="130vw"
+                    />
+                    <img
+                      class="apply__second-plane non-select-image"
+                      src="/assets/images/plane/apply-2.png"
+                      srcset="
+                        /assets/images/plane/apply-2-480.png 480w,
+                        /assets/images/plane/apply-2.png     800w
+                      "
+                      sizes="130vw"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </picture>
+
+                  <div class="apply__title apply__title--light">
+                    Backed by American’s leading airlines.
+                  </div>
+                  <button class="btn btn--premium">Learn more</button>
+                </div>
+
+                <div class="apply__card apply__card--right">
+                  <div class="apply__chat">
+                    <div class="apply__message apply__message--user">
+                      Nice. How can I switch to Let’sFly?
+                    </div>
+                    <div class="apply__message apply__message--system">
+                      Tap the 'Refinance Now' button to get started. If you have
+                      any questions, I'm here to help.
+                    </div>
+                    <div class="apply__message apply__message--user">
+                      👍 All done!
+                    </div>
+                  </div>
+                  <div class="apply__support">
+                    <div class="apply__title">
+                      Got a question?<br />We’re here to help.
+                    </div>
+                    <button class="btn btn--gray">Chat with us</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="apply__empty-wrapper">
+              <div class="apply__empty"></div>
+              <div class="apply__empty"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq" id="faq">
+          <div class="container faq__container">
+            <h2 class="faq__title">
+              In case you<br />
+              missed anything.
+            </h2>
+
+            <div>
+              <div class="faq__item">
+                <button class="faq__question">Are there really no fees?</button>
+                <div class="faq__answer">
+                  Yes, there are no setup or monthly account fees.
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <button class="faq__question">
+                  How does Let’s Fly annual discount bump work?
+                </button>
+                <div class="faq__answer">
+                  You get an interest rate discount each year you stay with us,
+                  up to 5 years.
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <button class="faq__question">
+                  Am I eligible for Let’s Fly?
+                </button>
+                <div class="faq__answer">
+                  You must be 18+, an Australian resident, and meet credit
+                  criteria.
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <button class="faq__question">
+                  What does the application process look like?
+                </button>
+                <div class="faq__answer">
+                  Apply online in under 10 minutes. Get a decision within 1–2
+                  business days.
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <button class="faq__question">
+                  What is Let’s Fly relationship to CommBank?
+                </button>
+                <div class="faq__answer">
+                  Let’s Fly is an independent platform, backed by CommBank for
+                  security and trust.
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <button class="faq__question">
+                  Can I offset interest in my Let’s Fly account?
+                </button>
+                <div class="faq__answer">
+                  Yes, eligible accounts include a 100% offset feature.
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <button class="faq__question">
+                  How does Let’s Fly make sure my data and personal information
+                  is safe?
+                </button>
+                <div class="faq__answer">
+                  We use bank-grade encryption and secure cloud infrastructure
+                  to protect your data.
+                </div>
+              </div>
+
+              <div class="faq__item">
+                <button class="faq__question">
+                  What if I need to get in touch with someone?
+                </button>
+                <div class="faq__answer">
+                  Contact our support team via chat, email or phone — 24/7
+                  availability.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div
+      class="modal"
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <div class="modal__content">
+          <button
+            class="modal__close"
+            id="close-modal-button"
+            aria-label="Close modal"
+          >
+            &times;
+          </button>
+
+          <div class="modal__header">
+            <h2 class="modal__title" id="modal-title">Ready to Fly?</h2>
+            <p class="modal__subtitle">
+              Fill out the form below and we will get back to you shortly.
+            </p>
+          </div>
+
+          <form class="form" id="application-form">
+            <label class="form__group">
+              <span>Full name</span>
+              <input
+                type="text"
+                placeholder="Enter your full name:"
+                name="name"
+                id="name"
+                required
+              />
+            </label>
+
+            <label class="form__group">
+              <span>Email</span>
+              <input
+                type="email"
+                placeholder="Enter your e-mail:"
+                name="email"
+                id="email"
+                required
+              />
+            </label>
+
+            <div class="form__group">
+              <button type="submit" class="btn btn--primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script src="/dist/js/faq.js" defer></script>
+    <script src="/dist/js/modal.js" defer></script>
+    <script src="/dist/js/scroll.js" defer></script>
+  </body>
+</html>

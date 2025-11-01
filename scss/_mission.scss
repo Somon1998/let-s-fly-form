@@ -1,0 +1,39 @@
+.mission {
+  position: relative;
+  z-index: 2;
+  width: 28%;
+  margin: 13rem auto 0;
+  @media (max-width: 1400px) {
+    width: 40%;
+  }
+  @media (max-width: 768px) {
+    margin-top: 10rem;
+    width: 70%;
+  }
+  @media (max-width: 480px) {
+    margin-top: 7rem;
+    width: 80%;
+  }
+
+  > div {
+    margin: 1.3rem auto;
+    opacity: 0.6;
+    font-size: 2.6rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.01rem;
+    will-change: transform;
+    @media (max-width: 1200px) {
+      font-size: 2rem;
+      margin: 1rem auto;
+    }
+    @media (max-width: 480px) {
+      font-size: 1.7rem;
+    }
+
+    &:first-child {
+      opacity: 1;
+    }
+  }
+}

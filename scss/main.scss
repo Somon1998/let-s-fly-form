@@ -1,0 +1,73 @@
+@import "variables";
+
+html {
+  font-size: 18px;
+
+  @media (max-width: 1920px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+
+  font-family: $font-family;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+
+  overflow-x: hidden;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1650px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+}
+
+.non-select-image {
+  pointer-events: none;
+  user-select: none;
+}
+
+.will-change-transform,
+.fade-in,
+.zoom-in-fade-in,
+.right-fade-in {
+  will-change: transform;
+}
+
+#smooth-content {
+  will-change: transform;
+}
+
+@import "ui";
+@import "header";
+@import "welcome";
+@import "mission";
+@import "section_ui";
+@import "loyalty";
+@import "costs";
+@import "apply";
+@import "faq";
+@import "modal";

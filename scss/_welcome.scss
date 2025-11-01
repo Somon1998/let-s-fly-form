@@ -1,0 +1,160 @@
+.welcome {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  margin-top: 7rem;
+  @media (max-width: 480px) {
+    margin-top: 4rem;
+  }
+
+  &__information {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 1400px) {
+      width: 70%;
+    }
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+  }
+
+  &__title {
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1;
+
+    @media (max-width: 768px) {
+      font-size: 5rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 4rem;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 0 auto;
+  }
+
+  &__plane {
+    position: absolute;
+    bottom: -19.5rem;
+    max-width: 70%;
+    height: auto;
+    margin-top: 0;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%); // Center it first
+    margin-left: -5rem; // Then offset
+    will-change: transform;
+
+    @media (max-height: 820px) and (min-width: 1600px) {
+      bottom: -24rem;
+    }
+
+    @media (max-width: 1400px) {
+      bottom: -20rem;
+      max-width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      bottom: -18rem;
+    }
+
+    @media (max-width: 768px) {
+      bottom: -14rem;
+      max-width: 140%;
+    }
+
+    @media (max-width: 480px) {
+      bottom: -10rem;
+      max-width: 145%;
+    }
+  }
+
+  &__bg-clouds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    img {
+      position: absolute;
+      user-select: none;
+
+      &.left-cloud {
+        top: -15rem;
+        left: 10rem;
+        width: 25vw;
+
+        @media (max-width: 1200px) {
+          top: -11.5rem;
+          left: 7.5rem;
+          width: 30vw;
+        }
+
+        @media (max-width: 768px) {
+          top: -9rem;
+        }
+      }
+
+      &.main-cloud {
+        top: 4rem;
+        left: 49%;
+        transform: translateX(-50%);
+        width: 60vw;
+
+        @media (max-width: 1200px) {
+          width: 80vw;
+          top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+          width: 95vw;
+        }
+      }
+
+      &.right-cloud {
+        top: -3rem;
+        right: -10rem;
+        width: 25vw;
+        transform: rotate(10deg);
+
+        @media (max-width: 1200px) {
+          right: -7rem;
+        }
+
+        @media (max-width: 768px) {
+          right: -5rem;
+          top: -4rem;
+        }
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -8rem;
+    z-index: 2;
+    background: radial-gradient(
+      ellipse at 50% 30%,
+      rgba(110, 135, 175, 0.07) 0%,
+      transparent 75%
+    );
+    pointer-events: none;
+  }
+}

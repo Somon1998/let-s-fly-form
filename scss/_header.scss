@@ -1,0 +1,59 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: transparent;
+  transition: background-color 0.3s ease;
+
+  &--scrolled {
+    background: whitesmoke;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  > .container {
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @media (max-width: 768px) {
+      padding: 1rem 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+      padding: 0.8rem 1rem;
+    }
+  }
+
+  &__logo {
+    font-size: 2rem;
+    font-weight: 700;
+
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__menu {
+    > ul {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      > li > a {
+        font-weight: 500;
+        color: $color-muted;
+        transition: color 0.3s ease;
+
+        @media (max-width: 480px) {
+          font-size: 0.9rem;
+        }
+
+        &:hover {
+          color: $color-text;
+        }
+      }
+    }
+  }
+}

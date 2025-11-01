@@ -1,0 +1,36 @@
+:root {
+  --color-bg: #eaebef;
+  --color-block: #fff;
+  --color-text: #3b3b3b;
+  --color-muted: #6e6f77;
+
+  --color-accent: #ff5c00;
+  --color-accent-hover: #e14c00;
+
+  --color-border: #d1d1d6;
+  --color-shadow: rgba(0, 0, 0, 0.05);
+  --color-overlay: rgba(0, 0, 0, 0.1);
+
+  --color-success: #34c759;
+  --color-error: #ff3b30;
+  --color-warning: #ffcc00;
+}
+
+$font-family: "Manrope", sans-serif;
+
+$color-bg: var(--color-bg);
+$color-block: var(--color-block);
+$color-text: var(--color-text);
+$color-gray: #e9e9e9;
+$color-muted: var(--color-muted);
+
+$color-accent: var(--color-accent);
+$color-accent-hover: var(--color-accent-hover);
+
+$color-border: var(--color-border);
+$color-shadow: var(--color-shadow);
+$color-overlay: var(--color-overlay);
+
+$color-success: var(--color-success);
+$color-error: var(--color-error);
+$color-warning: var(--color-warning);
