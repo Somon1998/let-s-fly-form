@@ -12,7 +12,7 @@
       name="keywords"
       content="private jet, luxury travel, affordable flights, seamless booking, jet charter, exclusive flights"
     />
-    <meta name="author" content="Max - RED Group" />
+    <meta name="author" content="Somon - Karimzoda" />
     <meta property="og:title" content="Private Jet" />
     <meta
       property="og:description"
@@ -28,37 +28,59 @@
     />
     <link rel="stylesheet" href="./dist/css/preflight.min.css" />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link rel="stylesheet" href="./dist/css/lang.css" />
     <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
   </head>
   <body id="body">
+    <!-- Смена языка -->
+    <div class="lang-menu">
+      <button class="lang-toggle" aria-label="Select Language">🌍</button>
+      <ul class="lang-dropdown" hidden>
+        <li><button class="lang-btn" data-lang="en">🇬🇧 English</button></li>
+        <li><button class="lang-btn" data-lang="ru">🇷🇺 Русский</button></li>
+        <li><button class="lang-btn" data-lang="tj">🇹🇯 Тоҷикӣ</button></li>
+      </ul>
+    </div>
+
     <header class="header fade-in">
       <div class="container">
-        <a href="/" class="header__logo"> LetsFly </a>
+        <a data-i18n="somon_air" href="/" class="header__logo">Somon Air</a>
         <nav class="header__menu">
           <ul>
-            <li><a href="#body">Intro</a></li>
-            <li><a href="#luxury">About</a></li>
-            <li><a href="#costs">Costs</a></li>
-            <li><a href="#apply">Features</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a data-i18n="intro" href="#body">Intro</a></li>
+            <li><a data-i18n="about" href="#luxury">About</a></li>
+            <li><a data-i18n="costs" href="#costs">Costs</a></li>
+            <li><a data-i18n="features" href="#apply">Features</a></li>
+            <li><a data-i18n="faq" href="#faq">FAQ</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <main class="welcome" id="welcome">
           <div class="welcome__information zoom-in-fade-in">
-            <div class="sub-title">Personal jets</div>
-            <h1 class="welcome__title">Luxury.<br />Affordable.</h1>
-            <div class="description">
+            <div data-i18n="sub_title" class="sub-title">Personal jets</div>
+            <h1 data-i18n="welcome_title" class="welcome__title">
+              Luxury.<br />Affordable.
+            </h1>
+            <div data-i18n="welcome_subtitle" class="description">
               We believe loyalty should be rewarded.
             </div>
 
             <div class="welcome__cta">
-              <button class="btn btn--gray">Learn more</button>
+              <a
+                href="https://www.instagram.com/somon7650k/"
+                target="_blank"
+                class="btn btn--gray"
+                data-i18n="btn_learn"
+              >
+                Learn more
+              </a>
               <button
                 class="btn btn--primary"
+                data-i18n="btn_lets_fly"
                 id="open-modal-button"
                 aria-label="Open application form"
               >
@@ -157,25 +179,32 @@
         </main>
 
         <div class="mission">
-          <div>One simple fly rate.</div>
-          <div>A discount that gets better and better.</div>
-          <div>Apply in minutes.</div>
-          <div>Built for rich people.</div>
+          <div data-i18n="fly_rate">One simple fly rate.</div>
+          <div data-i18n="discount_grows">
+            A discount that gets better and better.
+          </div>
+          <div data-i18n="apply_fast">Apply in minutes.</div>
+          <div data-i18n="for_rich">Built for rich people.</div>
         </div>
 
         <section id="luxury">
           <div class="container will-change-transform">
-            <div class="sub-title">EXPERIENGE OUR</div>
+            <div class="sub-title" data-i18n="luxury_subtitle">
+              EXPERIENCE OUR
+            </div>
             <h2 class="section-title">
-              <span>Luxury</span>
-              Flights.
+              <span data-i18n="luxury_title">Luxury</span>
+              <span data-i18n="flights">Flights.</span>
             </h2>
-            <div class="description section__description">
+            <div
+              class="description section__description"
+              data-i18n="luxury_description"
+            >
               Experience unmatched luxury in the skies. Our private jets offer
-              top-fier comfort, personalized service, and exquisite amenities
+              top-tier comfort, personalized service, and exquisite amenities
               for every journey.
             </div>
-            <button class="btn btn--gray">Book now</button>
+            <button class="btn btn--gray" data-i18n="book_now">Book now</button>
           </div>
 
           <picture>
@@ -210,10 +239,10 @@
         <section class="loyalty">
           <div class="container">
             <div class="loyalty__top">
-              <div class="sub-title">SEAMIESSI</div>
+              <div class="sub-title" data-i18n="seamlessly">SEAMLESSLY</div>
               <h2 class="section-title">
-                <span>Instantly</span>
-                Booked.
+                <span data-i18n="instantly">Instantly</span>
+                <span data-i18n="booked">Booked.</span>
               </h2>
             </div>
 
@@ -246,15 +275,22 @@
             </picture>
 
             <div class="loyalty__bottom">
-              <h3 class="section-bottom-title">Every. Single. Year.</h3>
+              <h3 class="section-bottom-title" data-i18n="every_single_year">
+                Every. Single. Year.
+              </h3>
               <div
                 class="section-bottom-description description section__description"
               >
-                Enjoy new, exclusive perks and benefits every single year with
-                our luxury flight services.<br /><br />
-                We believe lovely should be rewarded.
+                <p data-i18n="enjoy_perks">
+                  Enjoy new, exclusive perks and benefits every single year with
+                  our luxury flight services.
+                </p>
 
-                <button class="btn">Get Started</button>
+                <p data-i18n="belief_statement">
+                  We believe loyalty should be rewarded.
+                </p>
+
+                <button class="btn" data-i18n="get_started">Get Started</button>
               </div>
             </div>
           </div>
@@ -262,8 +298,10 @@
 
         <section class="costs" id="costs">
           <div class="container">
-            <div class="costs__sub-heading fade-in">Insanly Low</div>
-            <h2 class="costs__heading fade-in">Costs.</h2>
+            <div class="costs__sub-heading fade-in" data-i18n="insanely_low">
+              Insanely Low
+            </div>
+            <h2 class="costs__heading fade-in" data-i18n="costs">Costs.</h2>
             <picture>
               <source
                 type="image/webp"
@@ -294,24 +332,26 @@
 
             <div class="costs__bottom">
               <div class="costs__bottom-left">
-                <h3 class="section-bottom-title">Personal Discounts.</h3>
+                <h3 class="section-bottom-title" data-i18n="personal_discounts">
+                  Personal Discounts
+                </h3>
+
                 <div
                   class="costs__bottom-description section-bottom-description description section__description"
+                  data-i18n="unlock_tailored_savings"
                 >
-                  Unlock tallored savings lust for vou. Exclusive personal
-                  discounts on our luxury erivere jet services.
+                  Unlock tailored savings just for you. Exclusive personal
+                  discounts on our luxury private jet services.
                 </div>
-                <div class="costs__bottom-buttons">
-                  <button class="btn btn--gray">Learn more</button>
-                  <button class="btn">Get Started</button>
-                </div>
+                <button class="btn btn--gray" data-i18n="learn_more"></button>
+                <button class="btn" data-i18n="get_started"></button>
               </div>
               <div class="costs__bottom-right">
                 <div>
                   <div>5.25</div>
                   <div><span>%</span><span>PA</span></div>
                 </div>
-                <div>Estimated Rate*</div>
+                <div data-i18n="estimated_rate"></div>
               </div>
             </div>
           </div>
@@ -326,8 +366,8 @@
 
             <div class="apply__main">
               <div class="apply__card apply__card--top">
-                <span class="apply__title"> Apply in minutes. </span>
-                <button class="btn btn--gray">Learn more</button>
+                <span class="apply__title" data-i18n="apply_in_minutes"></span>
+                <button class="btn btn--gray" data-i18n="learn_more"></button>
                 <picture class="apply__first-plane">
                   <source
                     type="image/webp"
@@ -379,30 +419,46 @@
                     />
                   </picture>
 
-                  <div class="apply__title apply__title--light">
-                    Backed by American’s leading airlines.
+                  <div
+                    class="apply__title apply__title--light"
+                    data-i18n="backed_by_americans_leading_airlines"
+                  >
+                    <button
+                      class="btn btn--premium"
+                      data-i18n="learn_more"
+                    ></button>
                   </div>
-                  <button class="btn btn--premium">Learn more</button>
                 </div>
 
                 <div class="apply__card apply__card--right">
                   <div class="apply__chat">
-                    <div class="apply__message apply__message--user">
-                      Nice. How can I switch to Let’sFly?
-                    </div>
-                    <div class="apply__message apply__message--system">
-                      Tap the 'Refinance Now' button to get started. If you have
-                      any questions, I'm here to help.
-                    </div>
-                    <div class="apply__message apply__message--user">
+                    <div
+                      class="apply__message apply__message--user"
+                      data-i18n="nice_how_can_i_switch_to_Somon_Air"
+                    ></div>
+                    <div
+                      class="apply__message apply__message--system"
+                      data-i18n="tap_the_lets_fly_button_to_get_started_if_you_have_any_questions_im_here_to_help"
+                    ></div>
+
+                    <div
+                      class="apply__message apply__message--user"
+                      data-i18n="all_done"
+                    >
                       👍 All done!
                     </div>
                   </div>
+
                   <div class="apply__support">
-                    <div class="apply__title">
+                    <div
+                      class="apply__title"
+                      data-i18n="got_a_question_were_here_to_help"
+                    >
                       Got a question?<br />We’re here to help.
                     </div>
-                    <button class="btn btn--gray">Chat with us</button>
+                    <button class="btn btn--gray" data-i18n="chat_with_tj">
+                      Chat with tj
+                    </button>
                   </div>
                 </div>
               </div>
@@ -417,84 +473,129 @@
 
         <section class="faq" id="faq">
           <div class="container faq__container">
-            <h2 class="faq__title">
+            <h2 class="faq__title" data-i18n="in_case_you_missed_anything">
               In case you<br />
               missed anything.
             </h2>
 
             <div>
               <div class="faq__item">
-                <button class="faq__question">Are there really no fees?</button>
-                <div class="faq__answer">
+                <button
+                  class="faq__question"
+                  data-i18n="are_there_really_no_fees"
+                >
+                  Are there really no fees?
+                </button>
+                <div class="faq__answer" data-i18n="faq_no_fees_answer">
                   Yes, there are no setup or monthly account fees.
                 </div>
               </div>
 
               <div class="faq__item">
-                <button class="faq__question">
-                  How does Let’s Fly annual discount bump work?
+                <button
+                  class="faq__question"
+                  data-i18n="how_does_somon_air_annual_discount_bump_work"
+                >
+                  How does Somon Air annual discount bump work?
                 </button>
-                <div class="faq__answer">
+                <div
+                  class="faq__answer"
+                  data-i18n="you_get_an_interest_rate_discount_each_year_you_stay_with_us"
+                >
                   You get an interest rate discount each year you stay with us,
                   up to 5 years.
                 </div>
               </div>
 
               <div class="faq__item">
-                <button class="faq__question">
-                  Am I eligible for Let’s Fly?
+                <button
+                  class="faq__question"
+                  data-i18n="am_i_eligible_for_somon_air"
+                >
+                  Am I eligible for Somon Air?
                 </button>
-                <div class="faq__answer">
-                  You must be 18+, an Australian resident, and meet credit
+                <div
+                  class="faq__answer"
+                  data-i18n="you_must_be_18_tajikistan_resident_and_meet_credit"
+                >
+                  You must be 18+, a Tajikistan resident, and meet credit
                   criteria.
                 </div>
               </div>
 
-              <div class="faq__item">
-                <button class="faq__question">
-                  What does the application process look like?
-                </button>
-                <div class="faq__answer">
-                  Apply online in under 10 minutes. Get a decision within 1–2
-                  business days.
-                </div>
+              <button
+                class="faq__question"
+                data-i18n="what_does_the_application_process_look_like"
+              >
+                What does the application process look like?
+              </button>
+              <div
+                class="faq__answer"
+                data-i18n="apply_online_in_under_10_minutes_get_a_decision_within_1_2"
+              >
+                Apply online in under 10 minutes. Get a decision within 1–2
+                business days.
               </div>
 
               <div class="faq__item">
-                <button class="faq__question">
-                  What is Let’s Fly relationship to CommBank?
+                <button
+                  class="faq__question"
+                  data-i18n="what_is_the_relationship_between_somon_air_and_commbank"
+                >
+                  What is the relationship between Somon Air and CommBank?
                 </button>
-                <div class="faq__answer">
-                  Let’s Fly is an independent platform, backed by CommBank for
+                <div
+                  class="faq__answer"
+                  data-i18n="somon_air_independent_platform_backed_by_commbank_for_security_and_trust"
+                >
+                  Somon Air is an independent platform, backed by CommBank for
                   security and trust.
                 </div>
               </div>
 
               <div class="faq__item">
-                <button class="faq__question">
-                  Can I offset interest in my Let’s Fly account?
+                <button
+                  class="faq__question"
+                  data-i18n="can_i_offset_interest_in_my_somon_air_account"
+                >
+                  Can I offset interest in my Somon Air account?
                 </button>
-                <div class="faq__answer">
+                <div
+                  class="faq__answer"
+                  data-i18n="yes_eligible_accounts_include_a_100_offset_feature"
+                >
                   Yes, eligible accounts include a 100% offset feature.
                 </div>
               </div>
 
               <div class="faq__item">
-                <button class="faq__question">
-                  How does Let’s Fly make sure my data and personal information
+                <button
+                  class="faq__question"
+                  data-i18n="how_does_somon_air_make_sure_my_data_and_personal_information_is_safe"
+                >
+                  How does Somon Air make sure my data and personal information
                   is safe?
                 </button>
-                <div class="faq__answer">
+                <div
+                  class="faq__answer"
+                  data-i18n="we_use_bank_grade_encryption_and_secure_cloud_infrastructure_to_protect_your_data"
+                >
                   We use bank-grade encryption and secure cloud infrastructure
                   to protect your data.
                 </div>
               </div>
 
               <div class="faq__item">
-                <button class="faq__question">
+                <button
+                  class="faq__question"
+                  data-i18n="what_if_i_need_to_get_in_touch"
+                >
                   What if I need to get in touch with someone?
                 </button>
-                <div class="faq__answer">
+                <div
+                  class="faq__answer"
+                  data-i18n="contact_our_support_team_via_chat_email_or_phone_24_7"
+                >
                   Contact our support team via chat, email or phone — 24/7
                   availability.
                 </div>
@@ -567,5 +668,6 @@
     <script src="./dist/js/faq.js" defer></script>
     <script src="./dist/js/modal.js" defer></script>
     <script src="./dist/js/scroll.js" defer></script>
+    <script src="./dist/js/lang.js" defer></script>
   </body>
 </html>
